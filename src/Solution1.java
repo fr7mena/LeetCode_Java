@@ -23,25 +23,4 @@ public class Solution1 {
     }
 }
 
-/*
-import java.util.HashMap;
-
-class Solution {
-    public int[] twoSum(int[] nums, int target) {
-        HashMap<Integer, Integer> map = new HashMap<>(); // Crear el HashMap
-
-        for (int i = 0; i < nums.length; i++) { // Recorrer el array
-            int remaining = target - nums[i]; // Calcular el complemento
-
-            if (map.containsKey(remaining)) { // Si el complemento ya está en el HashMap
-                return new int[]{map.get(remaining), i}; // Devolver los índices encontrados
-            }
-
-            map.put(nums[i], i); // Agregar el número al HashMap
-        }
-        return new int[]{-1, -1}; // Esto no debería ocurrir si hay solución garantizada
-    }
-}
-
-*/
 
