@@ -1,7 +1,6 @@
-import java.util.Arrays;
 import java.util.HashMap;
 
-public class Solution1 {
+public class TwoSum {
     public static void main(String[] args) {
         int[] array = new int[]{1,3,5,5};
         int suma = 10;
