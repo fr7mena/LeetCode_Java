@@ -17,9 +17,9 @@ public class Solution1 {
             if (map.containsKey(remaining)) { //se hace esto porque en la key estoy guardando el valor de los componentes del array
                 return new int[]{map.get(remaining), i}; //esto sería una solución porque si el mapa contiene como clave el valor que necesito para sumar el target, que básicamente es el remainig, puede devolver el valor de la clave remaining que ya estaba en el mapa, que básicamente representa el índice del array de nums donde se encuentra el valor equivalente al remaining, y a su vez en la segunda componente del array solución el índice actual del array que es i.
             }
-            map.put(nums[i], i); //En el caso de que no lo encuentre añado al map esa clave-valor (valor de la componente del array(key) - índice del array(value))
+            map.put(nums[i], i); //En el caso de que no lo encuentre añado al map esa clave-valor (valor de la componente del array(key) - índice del array(value)) es decir le meto el valor como clave y el índice actual del array como valor
         }
-        return new int[]{-1, -1};
+        return new int[]{-1, -1}; //Si no devuelvo este array con dos componenetes con ambas componentes a menos -1
     }
 }
 
